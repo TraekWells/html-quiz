@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Tag from "./Tag";
 
 const Quiz = () => {
   const [tags, updateTags] = useState([]);
@@ -17,7 +18,7 @@ const Quiz = () => {
   return (
     <ul>
       {tags.map((tag, index) => {
-        return <li key={index}>{tag.description}</li>;
+        return <Tag tag={tag.tag} key={index} />;
       })}
     </ul>
   );
