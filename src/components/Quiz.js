@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Tag from "./Tag";
+import GuessInput from "./GuessInput";
 
 const Quiz = () => {
   const [tags, updateTags] = useState([]);
@@ -16,11 +17,14 @@ const Quiz = () => {
   }, []);
 
   return (
-    <ul>
-      {tags.map((tag, index) => {
-        return <Tag tag={tag.tag} key={index} />;
-      })}
-    </ul>
+    <>
+      <GuessInput />
+      <ul>
+        {tags.map((tag, index) => {
+          return <Tag tag={tag.tag} key={index} />;
+        })}
+      </ul>
+    </>
   );
 };
 
