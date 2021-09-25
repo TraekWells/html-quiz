@@ -18,13 +18,16 @@ const Quiz = () => {
 
   return (
     <>
-      <section className="bg-white m-8 p-10 rounded-lg shadow-md">
+      <section className="bg-white m-8 p-8 rounded-lg shadow-md">
         <GuessInput />
       </section>
       <div className="container m-8 mx-auto">
+        <p className="uppercase mb-2 leading-snug font-semibold text-indigo-600">
+          Tags
+        </p>
         <ul className="flex flex-wrap">
           {tags.map((tag, index) => {
-            return <Tag href={tag.link} tag={tag.tag} key={index} />;
+            return <Tag link={tag.link} tag={tag.tag} key={index} />;
           })}
         </ul>
       </div>
