@@ -7,6 +7,6 @@
     @apply bg-indigo-600 hover:bg-indigo-800 transition-colors text-white p-2 px-4 rounded-lg;
   }
   p {
-    @apply text-base mb-4;
+    @apply text-base mb-4 max-w-2xl;
   }
 }

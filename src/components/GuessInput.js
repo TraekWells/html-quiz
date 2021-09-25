@@ -4,8 +4,12 @@ function handleGuess(event) {
 
 const GuessInput = () => {
   return (
-    <form action="" onSubmit={handleGuess}>
-      <input type="text" placeholder="HTML Tag" />
+    <form action="" onSubmit={handleGuess} className="m-4">
+      <input
+        type="text"
+        placeholder="HTML Tag"
+        className="p-2 border-2 rounded-md"
+      />
     </form>
   );
 };

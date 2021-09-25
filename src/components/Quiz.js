@@ -19,7 +19,7 @@ const Quiz = () => {
   return (
     <>
       <GuessInput />
-      <ul>
+      <ul className="grid gap-3 grid-cols-8 grid-flow-row-dense">
         {tags.map((tag, index) => {
           return <Tag tag={tag.tag} key={index} />;
         })}
