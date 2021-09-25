@@ -1,12 +1,16 @@
 import { createRef, useState } from "react";
 
-const GuessInput = () => {
-  const [guess, updateGuess] = useState("");
+const GuessInput = (props) => {
+  let [guess, updateGuess] = useState("");
   const currentGuess = createRef("");
 
   const handleGuess = (event) => {
+    // 1. Prevent the default behavior of the form
+    // 2.
     event.preventDefault();
-    console.log(currentGuess.current.value);
+    updateGuess((guess = currentGuess.current.value));
+    console.log(guess);
+    currentGuess.current.value = "";
   };
 
   return (
