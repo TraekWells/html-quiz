@@ -1,5 +1,5 @@
 const Tag = (props) => {
-  return <button>&lt;{props.tag}&gt;</button>;
+  return <a target="_blank">&lt;{props.tag}&gt;</a>;
 };
 
 export default Tag;
