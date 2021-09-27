@@ -1,15 +1,14 @@
-import { createRef, useState } from "react";
+import { createRef } from "react";
 
-const GuessInput = (props) => {
-  let [guess, updateGuess] = useState("");
+const GuessInput = ({ setGuess }) => {
   const currentGuess = createRef("");
 
   const handleGuess = (event) => {
     // 1. Prevent the default behavior of the form
-    // 2.
     event.preventDefault();
-    updateGuess((guess = currentGuess.current.value));
-    console.log(guess);
+    // 2. Pass the user input to the parent Quiz component
+    setGuess(currentGuess.current.value);
+    // 3. Clear the form
     currentGuess.current.value = "";
   };
 

@@ -3,14 +3,15 @@ import Tag from "./Tag";
 import GuessInput from "./GuessInput";
 
 const Quiz = () => {
-  const [tags, updateTags] = useState([]);
+  const [tags, setTags] = useState([]);
+  const [guess, setGuess] = useState("");
 
   useEffect(() => {
     const getTags = async () => {
       await fetch("./data/tags.json")
         .then((response) => response.json())
         .then((data) => {
-          updateTags(data);
+          setTags(data);
         });
     };
     getTags();
@@ -18,8 +19,8 @@ const Quiz = () => {
 
   return (
     <>
-      <section className="bg-white m-8 p-8 rounded-lg shadow-md">
-        <GuessInput />
+      <section className="bg-white m-8 p-8 rounded-lg shadow-md max-w-md mx-auto">
+        <GuessInput setGuess={setGuess} />
       </section>
       <div className="container m-8 mx-auto">
         <p className="uppercase mb-2 leading-snug font-semibold text-indigo-600">
