@@ -1,5 +1,6 @@
 import { useHistory } from "react-router";
 import { ArrowRight } from "react-feather";
+import Footer from "./Footer";
 
 const Welcome = () => {
   const history = useHistory();
@@ -27,6 +28,7 @@ const Welcome = () => {
           </button>
         </section>
       </div>
+      <Footer />
     </>
   );
 };
