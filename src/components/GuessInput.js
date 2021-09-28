@@ -25,7 +25,7 @@ const GuessInput = ({ setGuess, guess }) => {
           placeholder="HTML Tag"
           className="p-2 border-2 rounded-md"
         />
-        <p class="text-sm mt-4 mb-0">Last Guess: {guess}</p>
+        <p className="text-sm mt-4 mb-0">Last Guess: {guess}</p>
       </form>
     </>
   );
