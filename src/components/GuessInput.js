@@ -1,7 +1,7 @@
 import { createRef } from "react";
 
-const GuessInput = ({ setGuess }) => {
-  const currentGuess = createRef("");
+const GuessInput = ({ setGuess, guess }) => {
+  const currentGuess = createRef();
 
   const handleGuess = (event) => {
     // 1. Prevent the default behavior of the form
@@ -14,7 +14,7 @@ const GuessInput = ({ setGuess }) => {
 
   return (
     <>
-      <form action="" onSubmit={handleGuess} className="flex flex-col m-4">
+      <form action="" onSubmit={handleGuess} className="flex flex-col">
         <label htmlFor="guess" className="mb-3">
           Enter an HTML tag
         </label>
@@ -25,6 +25,7 @@ const GuessInput = ({ setGuess }) => {
           placeholder="HTML Tag"
           className="p-2 border-2 rounded-md"
         />
+        <p class="text-sm mt-4 mb-0">Last Guess: {guess}</p>
       </form>
     </>
   );
