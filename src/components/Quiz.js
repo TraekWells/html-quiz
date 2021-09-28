@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Tag from "./Tag";
 import GuessInput from "./GuessInput";
+import Footer from "./Footer";
 
 const Quiz = () => {
   const [tags, setTags] = useState([]);
@@ -31,15 +32,7 @@ const Quiz = () => {
       <section className="bg-white m-8 p-8 rounded-lg shadow-md max-w-md mx-auto">
         <GuessInput setGuess={setGuess} guess={guess} />
       </section>
-      <div className="container m-8 mx-auto">
-        {/* <p className="uppercase mb-2 leading-snug font-semibold text-indigo-600">
-          Tags
-        </p>
-        <ul className="flex flex-wrap">
-          {tags.map((tag, index) => {
-            return <Tag link={tag.link} tag={tag.tag} key={index} />;
-          })}
-        </ul> */}
+      <div className="container m-8 mx-auto max-w-4xl">
         <p className="uppercase mb-2 leading-snug font-semibold text-indigo-600">
           Correct Guesses. {tags.length - correctGuesses.length} remaining.
         </p>
@@ -49,6 +42,7 @@ const Quiz = () => {
           })}
         </ul>
       </div>
+      <Footer />
     </>
   );
 };
