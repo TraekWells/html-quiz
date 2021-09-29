@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Tag from "./Tag";
 import GuessInput from "./GuessInput";
-import Footer from "./Footer";
 
 const Quiz = () => {
   const [tags, setTags] = useState([]);
@@ -21,8 +20,9 @@ const Quiz = () => {
 
   useEffect(() => {
     tags.forEach((tag) => {
-      if (guess === tag.tag && !correctGuesses.includes(guess)) {
+      if (guess === tag.tag) {
         setCorrectGuesses([...correctGuesses, { tag: guess }]);
+        // console.log(correctGuesses.some((current) => current.tag === guess));
       }
     });
   }, [guess]);
@@ -33,16 +33,22 @@ const Quiz = () => {
         <GuessInput setGuess={setGuess} guess={guess} />
       </section>
       <div className="container m-8 mx-auto max-w-4xl">
-        <p className="uppercase mb-2 leading-snug font-semibold text-indigo-600">
-          Correct Guesses. {tags.length - correctGuesses.length} remaining.
-        </p>
+        <p className="uppercase mb-2 leading-snug font-semibold text-indigo-600"></p>
         <ul className="flex flex-wrap">
-          {correctGuesses.map((tag, index) => {
-            return <Tag link={tag.link} tag={tag.tag} key={index} />;
+          {tags.map((tag, index) => {
+            return (
+              <Tag
+                link={tag.link}
+                tag={tag.tag}
+                key={index}
+                isCorrect={correctGuesses.some(
+                  (guesses) => guesses.tag === tag.tag
+                )}
+              />
+            );
           })}
         </ul>
       </div>
-      <Footer />
     </>
   );
 };
