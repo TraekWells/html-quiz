@@ -22,7 +22,6 @@ const Quiz = () => {
     tags.forEach((tag) => {
       if (guess === tag.tag) {
         setCorrectGuesses([...correctGuesses, { tag: guess }]);
-        // console.log(correctGuesses.some((current) => current.tag === guess));
       }
     });
   }, [guess]);
@@ -33,7 +32,10 @@ const Quiz = () => {
         <GuessInput setGuess={setGuess} guess={guess} />
       </section>
       <div className="container m-8 mx-auto max-w-4xl">
-        <p className="uppercase mb-2 leading-snug font-semibold text-indigo-600"></p>
+        <p className="uppercase mb-2 leading-snug font-semibold text-indigo-600">
+          Tags
+        </p>
+        <p>There are {tags.length - correctGuesses.length} tags remaining.</p>
         <ul className="flex flex-wrap">
           {tags.map((tag, index) => {
             return (
