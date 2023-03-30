@@ -1,172 +1,146 @@
 [
-  {
-    "tag": "html",
-    "description": "The <html> HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html"
-  },
-  {
-    "tag": "base",
-    "description": "The <base> HTML element specifies the base URL to use for all relative URLs in a document. There can be only one <base> element in a document.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base"
-  },
-  {
-    "tag": "head",
-    "description": "The <head> HTML element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
-  },
-  {
-    "tag": "link",
-    "description": "The <link> HTML element specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons (both 'favicon' style icons and icons for the home screen and apps on mobile devices) among other things.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
-  },
-  {
-    "tag": "meta",
-    "description": "The <meta> HTML element represents Metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style or title.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta"
-  },
-  {
-    "tag": "style",
-    "description": "The <style> HTML element contains style information for a document, or part of a document. It contains CSS, which is applied to the contents of the document containing the <style> element.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style"
-  },
-  {
-    "tag": "title",
-    "description": "The <title> HTML element defines the document's title that is shown in a Browser's title bar or a page's tab. It only contains text; tags within the element are ignored.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title"
-  },
-  {
-    "tag": "body",
-    "description": "The <body> HTML element represents the content of an HTML document. There can be only one <body> element in a document.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body"
-  },
-  {
-    "tag": "address",
-    "description": "The <address> HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address"
-  },
-  {
-    "tag": "article",
-    "description": "The <article> HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
-  },
-  {
-    "tag": "aside",
-    "description": "The <aside> HTML element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside"
-  },
-  {
-    "tag": "footer",
-    "description": "The <footer> HTML element represents a footer for its nearest sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"
-  },
-  {
-    "tag": "header",
-    "description": "The <header> HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"
-  },
-  {
-    "tag": "h1",
-    "description": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_elements"
-  },
-  {
-    "tag": "h2",
-    "description": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_elements"
-  },
-  {
-    "tag": "h3",
-    "description": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_elements"
-  },
-  {
-    "tag": "h4",
-    "description": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_elements"
-  },
-  {
-    "tag": "h5",
-    "description": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_elements"
-  },
-  {
-    "tag": "h6",
-    "description": "The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_elements"
-  },
-  {
-    "tag": "main",
-    "description": "The <main> HTML element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"
-  },
-  {
-    "tag": "nav",
-    "description": "The <nav> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"
-  },
-  {
-    "tag": "blockquote",
-    "description": "The <blockquote> HTML element indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the cite element.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
-  },
-  {
-    "tag": "dd",
-    "description": "The <dd> HTML element provides the description, definition, or value for the preceding term (dt) in a description list (dl).",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd"
-  },
-  {
-    "tag": "div",
-    "description": "The <div> HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
-  },
-  {
-    "tag": "dl",
-    "description": "The <dl> HTML element represents a description list. The element encloses a list of groups of terms (specified using the dt element) and descriptions (provided by dd elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"
-  },
-  {
-    "tag": "dt",
-    "description": "The <dt> HTML element specifies a term in a description or definition list, and as such must be used inside a dl element. It is usually followed by a dd element; however, multiple <dt> elements in a row indicate several terms that are all defined by the immediate next dd element.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt"
-  },
-  {
-    "tag": "figcaption",
-    "description": "The <figcaption> HTML element represents a caption or legend describing the rest of the contents of its parent figure element.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"
-  },
-  {
-    "tag": "figure",
-    "description": "The <figure> HTML element represents self-contained content, potentially with an optional caption, which is specified using the figcaption element. The figure, its caption, and its contents are referenced as a single unit.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"
-  },
-  {
-    "tag": "hr",
-    "description": "The <hr> HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr"
-  },
-  {
-    "tag": "li",
-    "description": "The <li> HTML element is used to represent an item in a list. It must be contained in a parent element: an ordered list (ol), an unordered list (ul), or a menu (menu). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li"
-  },
-  {
-    "tag": "ol",
-    "description": "The <ol> HTML element represents an ordered list of items — typically rendered as a numbered list.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
-  },
-  {
-    "tag": "p",
-    "description": "The <p> HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"
-  },
-  {
-    "tag": "pre",
-    "description": "The <pre> HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced, font. Whitespace inside this element is displayed as written.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"
-  },
-  {
-    "tag": "ul",
-    "description": "The <ul> HTML element represents an unordered list of items, typically rendered as a bulleted list",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
-  }
+  "a",
+  "abbr",
+  "acronym",
+  "address",
+  "applet",
+  "area",
+  "article",
+  "aside",
+  "audio",
+  "b",
+  "base",
+  "basefont",
+  "bdi",
+  "bdo",
+  "bgsound",
+  "big",
+  "blink",
+  "blockquote",
+  "body",
+  "br",
+  "button",
+  "canvas",
+  "caption",
+  "center",
+  "cite",
+  "code",
+  "col",
+  "colgroup",
+  "command",
+  "content",
+  "contenteditable",
+  "data",
+  "datalist",
+  "dd",
+  "del",
+  "details",
+  "dfn",
+  "dialog",
+  "dir",
+  "div",
+  "dl",
+  "dt",
+  "em",
+  "embed",
+  "fieldset",
+  "figcaption",
+  "figure",
+  "font",
+  "footer",
+  "form",
+  "frame",
+  "frameset",
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "head",
+  "header",
+  "hgroup",
+  "hr",
+  "html",
+  "i",
+  "iframe",
+  "image",
+  "img",
+  "input",
+  "ins",
+  "kbd",
+  "keygen",
+  "label",
+  "legend",
+  "li",
+  "link",
+  "main",
+  "map",
+  "mark",
+  "marquee",
+  "math",
+  "menu",
+  "menuitem",
+  "meta",
+  "meter",
+  "nav",
+  "nobr",
+  "noembed",
+  "noframes",
+  "noscript",
+  "object",
+  "ol",
+  "optgroup",
+  "option",
+  "output",
+  "p",
+  "param",
+  "picture",
+  "plaintext",
+  "portal",
+  "pre",
+  "progress",
+  "q",
+  "rb",
+  "rp",
+  "rt",
+  "rtc",
+  "ruby",
+  "s",
+  "samp",
+  "script",
+  "section",
+  "select",
+  "shadow",
+  "slot",
+  "small",
+  "source",
+  "spacer",
+  "span",
+  "strike",
+  "strong",
+  "style",
+  "sub",
+  "summary",
+  "sup",
+  "svg",
+  "table",
+  "tbody",
+  "td",
+  "template",
+  "textarea",
+  "tfoot",
+  "th",
+  "thead",
+  "time",
+  "title",
+  "tr",
+  "track",
+  "tt",
+  "u",
+  "ul",
+  "var",
+  "video",
+  "wbr",
+  "xmp"
 ]
