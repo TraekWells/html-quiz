@@ -1,6 +1,6 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Welcome from "./pages/Welcome";
-import Quiz from "./pages/Quiz";
+import Quiz from "./components/Quiz";
+import Welcome from "./components/Welcome";
 
 function App() {
   return (

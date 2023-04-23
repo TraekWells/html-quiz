@@ -10,6 +10,7 @@ const Welcome = () => {
   return (
     <>
       <h1>Welcome</h1>
+      <p>Maybe a little snippet here about how this works.</p>
       <p>Click the button below to start the quiz.</p>
       <button onClick={handleStartQuiz}>Start Quiz</button>
     </>
