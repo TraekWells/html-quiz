@@ -4,12 +4,14 @@ import Welcome from "./components/Welcome";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Welcome />} />
-        <Route path="/quiz" element={<Quiz />} />
-      </Routes>
-    </BrowserRouter>
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Welcome />} />
+          <Route path="/quiz" element={<Quiz />} />
+        </Routes>
+      </BrowserRouter>
+    </main>
   );
 }
 

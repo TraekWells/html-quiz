@@ -2,7 +2,7 @@ import React from "react";
 import Tag from "../Tag/Tag";
 import styles from "./TagList.module.scss";
 
-const TagList = ({ tags }) => {
+const TagList = ({ tags, correctGuesses }) => {
   return (
     <div className={styles["tag-list"]}>
       {tags.map((tag) => {
@@ -12,6 +12,7 @@ const TagList = ({ tags }) => {
             tag={tag.tag}
             link={tag.link}
             description={tag.description}
+            correctGuesses={correctGuesses}
           />
         );
       })}

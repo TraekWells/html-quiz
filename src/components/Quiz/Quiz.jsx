@@ -14,20 +14,24 @@ const Quiz = () => {
   }, []);
 
   const handleGuess = (guess) => {
-    const isCorrectGuess = tags.some((tag) => tag === guess);
+    const isCorrectGuess = tags.some((tag) => tag.tag === guess);
     if (isCorrectGuess) {
       const nextGuesses = [...correctGuesses, guess];
       setCorrectGuesses(nextGuesses);
+      console.log(correctGuesses);
     } else {
       return;
     }
   };
+
   return (
     <>
       <h1>Quiz</h1>
       <Guess handleGuess={handleGuess} />
-      <p>You have {tags.length} tags remaining.</p>
-      <TagList tags={tags} />
+      <p>You have {tags.length - correctGuesses.length} tags remaining.</p>
+      <p>Give up?</p>
+      <button>Reveal answers</button>
+      <TagList tags={tags} correctGuesses={correctGuesses} />
     </>
   );
 };
